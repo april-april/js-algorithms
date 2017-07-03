@@ -20,7 +20,7 @@ export default class BinarySearch {
             maxIndex = list.length - 1;
 
         while (minIndex <= maxIndex) {
-            currentIndex = Math.floor(maxIndex + maxIndex) / 2;
+            currentIndex = Math.floor(minIndex + maxIndex) / 2;
             currentElement = list[currentIndex];
 
             if (currentElement === element) {
